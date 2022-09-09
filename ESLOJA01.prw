@@ -4,7 +4,7 @@
 // Empresa: JVCS                                                                    //
 // Autor : Joao Victor Coelho dos Santos                                            //
 // Data: 16/06/2022                                                                 //
-// Solicitante: John/Ruan                                                           //
+//                                                            //
 // Descricao:     tela alternativa de cadastro de despesas (loja)                   //
 //                                                                                  //
 //////////////////////////////////////////////////////////////////////////////////////
@@ -83,7 +83,7 @@ User Function LEGENDA02()
 	local aLegenda := {}
 
 	AADD(aLegenda, {"BR_VERDE"    ,"Aprovado"})
-	AADD(aLegenda, {"BR_AZUL"     ,"Em Revis„o"})
+	AADD(aLegenda, {"BR_AZUL"     ,"Em Revis√£o"})
 	AADD(aLegenda, {"BR_VERMELHO" ,"Reprovado"})
 
 	BrwLegenda("Revisao","Legenda",aLegenda)
