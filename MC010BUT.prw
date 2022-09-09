@@ -6,8 +6,8 @@
 // Empresa: JVCS                                                                    //
 // Autor : Joao Victor Coelho dos Santos                                            //
 // Data: 22/08/2022                                                                 //
-// Solicitante: John/Ruan                                                           //
-// Descricao: Tela para visualizar preços de venda na tela de formacao de preco     //
+//                                                           //
+// Descricao: Tela para visualizar preÃ§os de venda na tela de formacao de preco     //
 //////////////////////////////////////////////////////////////////////////////////////
 
 User Function MC010BUT()
@@ -109,7 +109,7 @@ User Function ALTPRCVD(aProd,oDlg)
 
 
 	Local lAtu  := .F.
-	local cCadastro := "Preço de Venda"
+	local cCadastro := "PreÃ§o de Venda"
 
 
 	Private cCodPro := aProd[1][4] //oDlg:ACONTROLS[1]:COLPOS
