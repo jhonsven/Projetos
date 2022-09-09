@@ -5,8 +5,8 @@
 // Empresa: JVCS                                                                    //
 // Autor : Joao Victor Coelho dos Santos                                            //
 // Data: 16/06/2022                                                                 //
-// Solicitante: John/Ruan                                                           //
-// Descricao: Botões de aplicar desconto e igualar a preco base                     //
+//                                                           //
+// Descricao: BotÃµes de aplicar desconto e igualar a preco base                     //
 //////////////////////////////////////////////////////////////////////////////////////
   
 User Function OS010BTN()
@@ -40,7 +40,7 @@ User Function zDesc01()
     Private mvpar33 := ""
     
      
-    //Pegando posições do aHeader
+    //Pegando posiÃ§Ãµes do aHeader
     Private nPosVlDes   := aScan(oModelGrid:aHeader, {|x| AllTrim(x[2]) == AllTrim("DA1_VLRDES")})    
     Private nPosPrcV    := aScan(oModelGrid:aHeader, {|x| AllTrim(x[2]) == AllTrim("DA1_PRCVEN")})
     Private nPosPrcbase := aScan(oModelGrid:aHeader, {|x| AllTrim(x[2]) == AllTrim("DA1_PRCBAS")})
@@ -75,7 +75,7 @@ User Function zDesc01()
         oGetMsg:lActive := .F.
         oGetMsg:setCSS("QLineEdit{color:#FF0000; background-color:#FEFEFE;}")
          
-        //Botão confirmar
+        //BotÃ£o confirmar
        
         @ (nJanAltu/2)-24, (nJanLarg/2)-60  BUTTON oBtnCon  PROMPT "Confirmar"  SIZE 048, 018 OF oDlgAtu ACTION(Processa({|| fConfirmar()}, "Aplicando desconto..."), oDlgAtu:end() )                                                 PIXEL
      
@@ -115,7 +115,7 @@ Private nPosProd    := aScan(oModelGrid:aHeader, {|x| AllTrim(x[2]) == AllTrim("
 Private nPosCodTabe := aScan(oModelGrid:aHeader, {|x| AllTrim(x[2]) == AllTrim("DA1_CODTAB")})
 
 
-   if MsgYesNo( "Você está prestes a igualar o preco de VENDA ao preco BASE. Confirmar?", "Igualar precos" )
+   if MsgYesNo( "VocÃª estÃ¡ prestes a igualar o preco de VENDA ao preco BASE. Confirmar?", "Igualar precos" )
         
        Pergunte("XTABPREC",.T.)
 
@@ -242,7 +242,7 @@ Private nPosProd    := aScan(oModelGrid:aHeader, {|x| AllTrim(x[2]) == AllTrim("
 Private nPosCodTabe := aScan(oModelGrid:aHeader, {|x| AllTrim(x[2]) == AllTrim("DA1_CODTAB")})
 
 
-   if MsgYesNo( "Você está prestes a igualar o preco de VENDA ao preco BASE. Confirmar?", "Igualar precos" )
+   if MsgYesNo( "VocÃª estÃ¡ prestes a igualar o preco de VENDA ao preco BASE. Confirmar?", "Igualar precos" )
         
        Pergunte("XTABPREC",.T.)
 
